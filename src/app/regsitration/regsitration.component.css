@@ -1,0 +1,8 @@
+.container{
+    width:20rem;height: auto;position: relative;
+    left: 20%;top: 50%;transform: translate(-85%,40%);
+    background-color: rgba(255, 248, 168, 0.596);
+    box-shadow: 0 0 4px rgba(128, 128, 128, 0.418);
+    padding-bottom: 3%;padding-top: 3%;
+
+}

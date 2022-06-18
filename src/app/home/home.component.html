@@ -1,0 +1,133 @@
+<!-- <div class="container">
+    <ul>
+        <li *ngFor='let doc of myArray'>
+            {{doc.name}}
+        </li>
+    </ul>
+    <form [formGroup]="this.form11">
+        <input
+          placeholder="New Value"
+          formControlName="newValue"
+          type="text"
+          class="input-field col s12"
+        />
+        <button (click)="onSubmit()">
+          Submit
+        </button>
+      </form>
+     
+</div> -->
+
+
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('assets/img/slide-1.jpg')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate_animated animate_fadeInDown">Welcome to <span>Shopify</span></h2>
+              <p class="animate_animated animate_fadeInUp">Shop Online at Shopify for everything from Groceries, Healthy Living, to Pet Supplies, Electronics & more. Earn loyalty points online. Same Day Delivery.
+            </p>
+              <!-- <a *ngIf="logedin()" (click)="signOut()" class="btn-get-started animate_animated animate_fadeInUp scrollto">Sign Out</a> -->
+              <a *ngIf="!logedin()" routerLink="registration" class="btn-get-started animate_animated animate_fadeInUp scrollto">Sign Up</a>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+      <ul id="ul1">
+        
+  <li><img src="/assets/img/images.jpg"> <h5>Polo</h5><button (click)="onPurchaseClick('Polo')">Purchase</button></li>
+  <li><img src="/assets/img/images1.jpg"><h5>Gucci </h5><button (click)="onPurchaseClick('Gucci')">Purchase</button></li>
+  <li><img src="/assets/img/images3.jpg"><h5>Zara </h5><button (click)="onPurchaseClick('Zara')">Purchase</button></li>
+  <li><img src="/assets/img/images 4.jpg"><h5>Jeans </h5><button (click)="onPurchaseClick('Jeans')">Purchase</button></li>
+  <li><img src="/assets/img/images5.jpg"><h5>Clarks </h5><button (click)="onPurchaseClick('Clarks')">Purchase</button></li>
+  <li><img src="/assets/img/images 5.jpg"><h5>Puma </h5><button (click)="onPurchaseClick('Puma')">Purchase</button></li>
+  <li><img src="/assets/img/images6.jpg"><h5>Nike </h5><button (click)="onPurchaseClick('Nike')">Purchase</button></li>
+  <li><img src="/assets/img/images7.jpg"><h5>Adidas </h5><button (click)="onPurchaseClick('Adidas')">Purchase</button></li>
+  <li><img src="/assets/img/images8.jpg"><h5>Clarks </h5><button (click)="onPurchaseClick('Clarks')">Purchase</button></li>
+
+
+</ul>
+
+       
+
+      
+
+      </div>
+    </section><!-- End About Section -->
+
+
+<br>
+
+
+    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Shopify</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          
+  
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Welcome in our company</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+  
+          </div> -->
+  
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Shopify</span></strong>. All Rights Reserved
+      </div>
+      
+    </div> -->
+  </footer>
+  <!-- End Footer -->
+

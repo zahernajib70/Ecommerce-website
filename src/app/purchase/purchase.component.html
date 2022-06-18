@@ -1,0 +1,39 @@
+<div class="container">
+  <div>
+    <div><span style="font-size: 20px;font-weight: 450;">Brand name :</span> {{getCategory()}}</div>
+    <form #purchase="ngForm">
+          <div class="form-group">
+            <label for="color1">Color</label>
+            <input type="text" class="form-control ng-untouched ng-pristine ng-valid" id="color1" required
+            [(ngModel)]="color" name="color1" #color1="ngModel">
+            <label for="quantity1">Quantity</label>
+            <input type="text" class="form-control ng-untouched ng-pristine ng-valid" id="quantity1" required
+            [(ngModel)]="quantity" name="quantity1" #quantity1="ngModel">
+            <label for="size1">Size</label>
+            <select class="form-control ng-untouched ng-pristine ng-valid" id="size1" required
+            [(ngModel)]="size" name="size1" #size1="ngModel" style="margin-bottom: 2%;">
+               <option value="XSmall">XSmall</option>
+               <option value="Small">Small</option>
+               <option value="Medium">Medium</option>
+               <option value="Large">Large</option>
+               <option value="XLarge">XLarge</option>
+            </select>
+            <button type="submit" class="btn btn-success" [disabled]="!purchase.form.valid" (click)="submit()">Post Data</button>
+          </div>
+  
+    </form>
+  </div>
+  <br>
+  <div>
+  <span style="font-size: 20px;font-weight: 480;">Data From Firebase Firestore</span>
+  <ul> 
+    <li *ngFor='let doc of myArray'>
+      {{doc.color}} {{doc.quantity}} {{doc.size}} {{doc.category}}
+    </li>
+  </ul>
+</div>
+<button (click)='delete()'>Delete Datas</button>
+</div>
+
+
+
